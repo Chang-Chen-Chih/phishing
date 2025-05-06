@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("loginForm");
+    const fakeAlert = document.getElementById("fake-alert");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // 阻止表單送出
-        alert("你被騙了！");
+        e.preventDefault();
+        fakeAlert.classList.remove("hidden");
+
+        setTimeout(() => {
+            fakeAlert.classList.add("hidden");
+        }, 3000); // 3秒後自動隱藏
     });
 });

@@ -138,3 +138,22 @@ body {
     height: 40px;
     display: block;
 }
+
+#fake-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcccc;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #aa0000;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
